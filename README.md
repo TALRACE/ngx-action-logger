@@ -53,6 +53,50 @@ export class UsersComponent {}
 onCancel(): void {}
 ```
 
+### Kibana example
+
+After successfully sending the data to elastic, you can view the data and build graphs in kibana. For this you need:
+
+1. Create new index patter (Stack Management -> Index patterns -> Create index pattern). Type your index name to the input and click "Next step".
+
+![type your index name](https://github.com/TALRACE/ngx-action-logger/img/kibana_1.png?raw=true)
+
+ Select time filter filed (index by default contains "timestamp" filed with date property type by default) and click "Create index pattern".
+![select time filter filed](https://github.com/TALRACE/ngx-action-logger/img/kibana_2.png?raw=true)
+
+ After some seconds you can see your created index pattern with all fields.
+![created index pattern](https://github.com/TALRACE/ngx-action-logger/img/kibana_3.png?raw=true)
+
+2. You can discover index data. Open "Discover" page in kibana.
+!["Discover" page](https://github.com/TALRACE/ngx-action-logger/img/kibana_4.png?raw=true)
+
+Select your index pattern and research incoming data. Use search if needed used [KQL](https://www.elastic.co/guide/en/kibana/7.8/kuery-query.html).
+!["Discover" data](https://github.com/TALRACE/ngx-action-logger/img/kibana_5.png?raw=true)
+
+3. You can combine data views from any Kibana app into one dashboard and see everything in one place. Open "Dashboards" page in kibana.
+!["Dashboards" data](https://github.com/TALRACE/ngx-action-logger/img/kibana_6.png?raw=true)
+
+Select "Create new dashboard".
+![Create new dashboard](https://github.com/TALRACE/ngx-action-logger/img/kibana_7.png?raw=true)
+
+Add an existing or new object to this dashboard, click "Create new".
+![Create new](https://github.com/TALRACE/ngx-action-logger/img/kibana_8.png?raw=true)
+
+Select "Go to Lens" or select visualization.
+![Go to Lens](https://github.com/TALRACE/ngx-action-logger/img/kibana_9.png?raw=true)
+
+Drag any fields in left side and drop fields in center for display visualization.
+![Drag any fields](https://github.com/TALRACE/ngx-action-logger/img/kibana_10.png?raw=true)
+
+Select any other Suggestions or change settings in right side.
+![Select any Suggestions](https://github.com/TALRACE/ngx-action-logger/img/kibana_11.png?raw=true)
+
+Save your visualization and Add title and description.
+![Save your visualization](https://github.com/TALRACE/ngx-action-logger/img/kibana_12.png?raw=true)
+
+Create new visualization if needed.
+![Create new visualization if needed.](https://github.com/TALRACE/ngx-action-logger/img/kibana_13.png?raw=true)
+
 ### API
 
 Logger module used API:
